@@ -1,0 +1,23 @@
+{
+  "name": "compjs2068",
+  "version": "1.0.0",
+  "description": "A Blogging Platform",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kabirbajaj/comp-2068-thursday.git"
+  },
+  "author": "kabir bajaj",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kabirbajaj/comp-2068-thursday/issues"
+  },
+  "homepage": "https://github.com/kabirbajaj/comp-2068-thursday#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}

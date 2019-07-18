@@ -1,0 +1,11 @@
+block globals
+
+doctype html
+html(lang="en")
+ head 
+ link(href="/css/styles.css", rel="stylesheet")
+  title= (title ? title : "NO TTILE FOR PAGE HERE. GIVE ME ONE!") 
+
+ body
+  include ../partials/nav.pug
+  block content  

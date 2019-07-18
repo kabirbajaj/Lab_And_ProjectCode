@@ -1,0 +1,27 @@
+extends ../layouts/main.pug
+block content
+  .container
+    header
+      h1= title
+
+    div
+      table.table.table-striped
+        thead
+          tr
+            th Name
+            th Genre
+            th Year
+            th
+        
+        tbody
+          each store in stores
+            tr
+              td
+                a(href=`/store/${store.id}`)= store.title
+              td= store.year
+              td
+                a(href=`/store/${store.id}/edit`) edit
+                 = " | "
+                 form.destroy(action="/blogs/destroy", method="POST", onsubmit='return confirm("seriously dude! oh man you want to delete this?");')
+                 input(type="hidden", name="id", value=store.id)
+                 input(type="submit", value="delete")

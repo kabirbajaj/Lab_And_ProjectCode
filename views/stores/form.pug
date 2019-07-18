@@ -1,0 +1,19 @@
+form(action=(store ? "/stor/update" : "/store"), method="POST")
+if store
+    input(type="hidden", name="id", value=store.id)    
+
+        .form-group
+          label Name
+          input.form-control(name="store[name]", required, value=(store ? store.name : null))
+
+        .form-group
+          label Genre
+          textarea.form-control(name="store[genre]", required, value=(store ? store.genre : null))
+
+        .form-group
+          label Year
+          select.form-control(name="store[year]", required, value=(store ? store.year : null))
+            
+        
+        .form-group
+          button.btn.btn-dark(type="submit") Submit
